@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+          <th>EXT_NO</th>
+          <th>EXT_NAME</th>
+          <th>EXT_CREATETIME</th>
+          <th>TEAM_NAME</th>
+          <th>TEAM_NO</th>
+      </thead>
+      <tbody>
+          <%for(var i = 0; i < ext_select.length; i++) {%>
+          <tr>
+              <td>
+                  <%=ext_select[i].EXT_NO%>
+              </td>
+              <td>
+                  <%=ext_select[i].EXT_NAME%>
+              </td>
+              <td>
+                  <%=ext_select[i].EXT_CREATETIME%>
+              </td>
+              <td>
+                  <%=ext_select[i].TEAM_NAME%>
+              </td>
+              <td>
+                  <%=ext_select[i].TEAM_NO%>
+              </td>
+          </tr>
+          <%}%>
+      </tbody>
+  </table>
+  </body>
+</html>
